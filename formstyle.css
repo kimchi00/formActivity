@@ -50,7 +50,7 @@ form textarea {
     color: white;
 }
 
-input[type="submit"] {
+input[type="button"] {
     background-color: green;
     color: white;
 }
@@ -58,4 +58,16 @@ input[type="submit"] {
 input[type="reset"] {
     background-color: red;
     color: white;
+}
+
+#errormsg {
+    color: red;
+}
+
+#errormsg2 {
+    color: red;
+}
+
+#nice {
+    color: green;
 }
