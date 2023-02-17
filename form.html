@@ -4,6 +4,7 @@
 
 <head>
     <title>Form Activity</title>
+    <script src="formjs.js"></script>
     <link rel="stylesheet" href="formstyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,16 +13,19 @@
 
 <body>
     <div class="wrap">
-        <form>
+        <form name="myform">
             <section class="content">
                 <h1>Registration Form</h1>
+                <p id="nice"></p>
                 First Name:
                 <input type="text" name="firstname" />
                 Last Name: <input type="text" name="lastname" />
                 Nick Name: <input type="text" name="nickname" />
                 Email: <input type="email" name="email" />
-                Password: <input type="password" name="password" />
-                Date of Birth: <input type="date" name="bday" />
+                Password: <input type="password" name="password" id="pw" />
+                <p id="errormsg"></p>
+                Date of Birth: <input type="date" name="bday" id="date" />
+                <p id="errormsg2"></p>
                 Gender:
                 <div class="radio">
                     <input type="radio" name="male" value="male" /> Male
@@ -31,7 +35,7 @@
                 Mobile: <input type="number" name="mobile" />
                 Address: <textarea name="address" cols="25" rows="5"></textarea>
                 <div class="buttons">
-                    <input type="submit" name="submit" value="Submit" />
+                    <input type="button" name="submit" value="Submit" onclick="Plength()" />
                     <input type="reset" name="reset" value="Reset" />
                 </div>
             </section>
